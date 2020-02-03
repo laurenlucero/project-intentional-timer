@@ -1,7 +1,19 @@
+/* The first code snippet was suggested by Amy in my balancing-act feedback
+It overrides the user agent style sheet styling so you are starting from scratch
+I also added the font and sized the images down */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
 
 img {
-  width: 100px;
+  width: 50px;
 }
