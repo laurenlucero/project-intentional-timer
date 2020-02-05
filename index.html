@@ -7,32 +7,47 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>INTENTION TIMER</h1>
+    <header class="title-header">
+      <h1 class="">Intention Timer</h1>
     </header>
-    <section class="new-activity">
-      <h1>New Activity</h1>
-    <section class="start-activity">
-      <h2>Select a category:</h2>
-        <button><img src="assets/study.svg">Study</button>
-        <button><img src="assets/meditate.svg">Meditate</button>
-        <button><img src="assets/exercise.svg">Exercise</button>
-        <form>
-          <label>What would you like to accomplish during this time?</label>
-            <input type=text></input>
-          <label>Minutes</label>
-            <input type=text></input>
-          <label>Seconds</label>
-            <input type=text></input>
-            <button>START ACTIVITY</button>
-        </form>
+    <section class="left-container">
+      <section class="new-activity">
+        <h1 class="new-activity-header">New Activity</h1>
+        <section class="start-activity">
+          <h3 class="category-select-header">Select a category:</h3>
+            <section class="category-buttons">
+              <button><img src="assets/study.svg">Study</button>
+              <button><img src="assets/meditate.svg">Meditate</button>
+              <button><img src="assets/exercise.svg">Exercise</button>
+            </section>
+            <form class="form-details">
+            <section class="accomplish-input">
+              <label>What would you like to accomplish during this time?</label>
+              <input type=text></input>
+            </section>
+            <section class="minutes-container">
+              <label>Minutes</label>
+              <input type=text></input>
+            </section>
+            <section class="seconds-container">
+              <label>Seconds</label>
+              <input type=text></input>
+            </section>
+            <button class="start-button">Start Activity</button>
+          </form>
+        </section>
+      </section>
     </section>
-    </section>
+    <section class="right-container">
     <section class="past-activities">
       <h1>Past Activities</h1>
-      <p>You haven't logged any activities yet.</p>
-      <p>Complete the form to the left to get started!</p>
+
+      <section class="paragraph">
+        <p>You haven't logged any activities yet.</p>
+        <p>Complete the form to the left to get started!</p>
+      </section>
+</section>
     </section>
-  <script src="main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
