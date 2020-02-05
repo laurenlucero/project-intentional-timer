@@ -1,0 +1,136 @@
+/* The first code snippet was suggested by Amy in my balancing-act feedback
+It overrides the user agent style sheet styling so you are starting from scratch
+I also added the font and sized the images down */
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+img {
+  width: 50px;
+  display: block;
+}
+
+body {
+  background-color: #2B2733;
+}
+
+
+
+.title-header {
+  background-color: #46424D;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding: 1%;
+}
+
+/* This section contains elements for the left side of the page */
+
+.left-container {
+  padding: 2%;
+  width: 60%;
+  display: inline-block;
+  border-right: 5px solid #46424D
+}
+
+.new-activity-header {
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.start-activity {
+  background-color: #46424D;
+  width: 100%;
+  height: 500px;
+  padding: 30px 60px;
+  border-radius: 5px;
+}
+
+.category-select-header {
+  margin: 10px 0 10px 8px;
+}
+
+.category-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 10px 50px;
+}
+
+button {
+  background: none;
+  width: 100px;
+}
+
+.form-details {
+  width: 100%;
+  height: 65%;
+  /* margin: 50px; */
+}
+input {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  width: 100%;
+  height: 50px;
+}
+.accomplish-input {
+display: block;
+margin-bottom: 70px;
+}
+
+.minutes-container {
+  display: inline-block;
+  /* flex-direction: column; */
+  margin-right: 30px;
+  width: 40%;
+}
+
+.seconds-container {
+display: inline-block;
+margin-left: 20px;
+width: 50%
+}
+
+.start-button {
+  float: right;
+  position: absolute;
+  padding: 13px;
+  width: 180px;
+  bottom: 100px;
+  right: 560px;
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+/* This section contains the elements for the right side of the page */
+
+.right-container {
+  display: inline-block;
+  vertical-align: top;
+  height: 500px;
+  margin: 10px;
+  padding: 10px 5px;
+}
+
+.paragraph {
+  display: block;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.past-activities {
+  /* margin-bottom: 10px; */
+}
