@@ -69,6 +69,8 @@ body {
 button {
   background: none;
   width: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .form-details {
@@ -107,7 +109,7 @@ width: 50%
   padding: 13px;
   width: 180px;
   bottom: 100px;
-  right: 560px;
+  right: 650px;
   background-color: white;
   text-transform: uppercase;
   border-radius: 5px;
