@@ -24,8 +24,6 @@ body {
   background-color: #2B2733;
 }
 
-
-
 .title-header {
   background-color: #46424D;
   display: flex;
@@ -78,13 +76,17 @@ button {
   height: 65%;
   /* margin: 50px; */
 }
+
 input {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
+  color: white;
+  font-size: 16px;
   width: 100%;
   height: 50px;
 }
+
 .accomplish-input {
 display: block;
 margin-bottom: 70px;
@@ -111,6 +113,7 @@ width: 50%
   bottom: 100px;
   right: 650px;
   background-color: white;
+  color: black;
   text-transform: uppercase;
   border-radius: 5px;
 }
@@ -135,4 +138,8 @@ width: 50%
 
 .past-activities {
   /* margin-bottom: 10px; */
+}
+
+:required {
+  color: #EFB7EC;
 }
