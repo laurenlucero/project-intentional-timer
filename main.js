@@ -14,7 +14,8 @@ secondsInput.addEventListener('input', restrictNumber);
 function restrictNumber (e) {
   var newValue = this.value.replace();
   this.value = newValue;
-  
+}
+
 var meditate = document.querySelector('.meditate-btn');
 var exercise = document.querySelector('.exercise-btn');
 var study = document.querySelector('.study-btn');
