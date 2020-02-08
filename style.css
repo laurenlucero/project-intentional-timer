@@ -117,6 +117,25 @@ width: 50%
   text-transform: uppercase;
   border-radius: 5px;
 }
+
+/* .meditate-btn {
+
+} */
+
+.med-btn-selected {
+  border: 1px solid #C278FD;
+  color: #C278FD;
+}
+
+.study-btn-selected {
+  border: 1px solid #B3FD78;
+  color: #B3FD78;
+}
+
+.exercise-btn-selected {
+  border: 1px solid #FD8078;
+  color: #FD8078;
+}
 /* This section contains the elements for the right side of the page */
 
 .right-container {
