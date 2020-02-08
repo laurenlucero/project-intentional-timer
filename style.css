@@ -20,8 +20,6 @@ img {
   width: 30px;
   display: block;
   height: 41px;
-  /* position: relative; */
-
 }
 
 .title-header {
@@ -39,7 +37,6 @@ img {
   width: 60%;
   display: inline-block;
   border-right: 5px solid #46424D
-  /* height: 91vh; */
 }
 
 .new-activity-header {
@@ -79,7 +76,6 @@ button {
 .form-details {
   width: 100%;
   height: 65%;
-  /* margin: 50px; */
 }
 
 input {
@@ -99,7 +95,6 @@ margin-bottom: 70px;
 
 .minutes-container {
   display: inline-block;
-  /* flex-direction: column; */
   margin-right: 30px;
   width: 40%;
 }
@@ -122,10 +117,6 @@ width: 50%
   text-transform: uppercase;
   border-radius: 5px;
 }
-
-/* .meditate-btn {
-
-} */
 
 .med-btn-selected {
   border: 1px solid #C278FD;
@@ -153,8 +144,6 @@ width: 50%
 
 .paragraph {
   display: block;
-  /* justify-content: center;
-  align-items: center; */
   margin: 0;
   text-align: center;
   padding-top: 30px;
