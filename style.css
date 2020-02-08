@@ -36,7 +36,8 @@ img {
   padding: 2%;
   width: 60%;
   display: inline-block;
-  border-right: 5px solid #46424D
+  border-right: 5px solid #46424D;
+  height: 100vh;
 }
 
 .new-activity-header, .current-activity-header {
