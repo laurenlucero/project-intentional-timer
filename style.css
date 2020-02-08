@@ -20,8 +20,6 @@ img {
   width: 30px;
   display: block;
   height: 41px;
-  /* position: relative; */
-
 }
 
 .title-header {
@@ -38,8 +36,8 @@ img {
   padding: 2%;
   width: 60%;
   display: inline-block;
-  border-right: 5px solid #46424D
-  /* height: 91vh; */
+  border-right: 5px solid #46424D;
+  height: 100vh;
 }
 
 .new-activity-header {
@@ -79,15 +77,18 @@ button {
 .form-details {
   width: 100%;
   height: 65%;
-  /* margin: 50px; */
 }
+
 input {
   border: none;
   border-bottom: 1px solid white;
   background: transparent;
+  color: white;
+  font-size: 16px;
   width: 100%;
   height: 50px;
 }
+
 .accomplish-input {
 display: block;
 margin-bottom: 70px;
@@ -95,7 +96,6 @@ margin-bottom: 70px;
 
 .minutes-container {
   display: inline-block;
-  /* flex-direction: column; */
   margin-right: 30px;
   width: 40%;
 }
@@ -114,13 +114,10 @@ width: 50%
   bottom: 100px;
   right: 650px;
   background-color: white;
+  color: black;
   text-transform: uppercase;
   border-radius: 5px;
 }
-
-/* .meditate-btn {
-
-} */
 
 .med-btn-selected {
   border: 1px solid #C278FD;
@@ -148,8 +145,6 @@ width: 50%
 
 .paragraph {
   display: block;
-  /* justify-content: center;
-  align-items: center; */
   margin: 0;
   text-align: center;
   padding-top: 30px;
@@ -157,4 +152,8 @@ width: 50%
 
 .past-activities {
   /* margin-bottom: 10px; */
+}
+
+:required {
+  color: #EFB7EC;
 }
