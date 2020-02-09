@@ -11,27 +11,31 @@
       <h1 class="">Intention Timer</h1>
     </header>
     <section class="left-container">
-      <section class="new-activity">
+      <section class="new-activity-page">
         <h1 class="new-activity-header">New Activity</h1>
-        <section class="start-activity">
+      <section class="start-activity">
           <h3 class="category-select-header">Select a category:</h3>
             <section class="category-buttons">
               <button class="study-btn"><img src="assets/study.svg" id="study-btn" alt="lit-bulb-over-open-book-logo">Study</button>
               <button class="meditate-btn"><img src="assets/meditate.svg" id="meditate-btn" alt="lotus-flower-logo">Meditate</button>
               <button class="exercise-btn"><img src="assets/exercise.svg" id="exercise-btn" alt="shoe-in-motion-logo">Exercise</button>
-            </section>
+              <p hidden class="category-error hidden-error"><img src="assets/warning.svg">Category is required</p>
+          </section>
             <form class="form-details">
             <section class="accomplish-input">
               <label>What would you like to accomplish during this time?</label>
-              <input type=text required></input>
+              <input type=text class="goal-input" id="goal"></input>
+              <p hidden class="goal-error hidden-error"><img src="assets/warning.svg">A description is required</p>
             </section>
             <section class="minutes-container">
               <label>Minutes</label>
-              <input type=number class="minutes" required></input>
+              <input type=number class="minutes" id="minutes"></input>
+              <p hidden class="minutes-error hidden-error"><img src="assets/warning.svg">Minutes are required</p>
             </section>
             <section class="seconds-container">
               <label>Seconds</label>
-              <input type=number class="seconds" required></input>
+              <input type=number class="seconds" id="seconds"></input>
+              <p hidden class="seconds-error hidden-error"><img src="assets/warning.svg">Seconds are required</p>
             </section>
             <input class="start-button" type="submit" value="Start Activity">
           </form>
@@ -41,19 +45,23 @@
     <section class="right-container">
     <section class="past-activities">
       <h1>Past Activities</h1>
-      <section class="paragraph">
-        <!-- <p>You haven't logged any activities yet.</p>
+      <!-- <section class="paragraph">
+        <p>You haven't logged any activities yet.</p>
         <p>Complete the form to the left to get started!</p> -->
-    </section>
+    <!-- </section> -->
     </section>
     </section>
   <!-- current activity page -->
   <section class="left-container">
+    <section class="current-activity-page">
     <h1 class="current-activity-header">Current Activity</h1>
     <section class="current-activity">
-      <h1 class="activity-name-header">Deep Breathing</h1>
-      <p class="timer">05:00</p>
+      <h1 class="goal-display">Deep Breathing</h1>
+      <section class="timer">
+        <p class=time-in-mins></p>:<p class='time-in-secs'></p>
+      </section>
       <button class="start-timer-btn">START</button>
+    </section>
     </section>
   </section>
     <script src="main.js"></script>
