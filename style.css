@@ -31,7 +31,7 @@ img {
 }
 
 .main1 {
-  
+
 }
 
 /* This section contains elements for the left side of the page */
@@ -185,6 +185,9 @@ width: 40%
 }
 
 /* This section contains the elements for the timer page */
-.main2 {
+.current-activity-page {
   display: none;
+  /* position: absolute;
+  top: 80px;
+  width: 50%; */
 }
