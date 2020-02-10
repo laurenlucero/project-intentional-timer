@@ -100,27 +100,4 @@ function checkInputValues() {
 var goal = Text(document.getElementById('goal').value)
 var minutes = Number(document.getElementById('minutes').value)
 var seconds = Number(document.getElementById('seconds').value)
-
-// ?
-var goalDisplay = document.querySelector('.goal-display')
-goalDisplay.innerHTML = `${userGoalInput}`
-// ?
-
-var minutesDisplay = document.querySelector('.time-in-mins')
-var secondsDisplay = document.querySelector('.time-in-secs')
-if (seconds < 10) {
-  minutesDisplay.innerHTML = `${minutesInput}`
-  secondsDisplay.innerHTML = `0${secondsInput}`
-} else {
-  minutesDisplay.innerHTML = `${minutesInput}`
-  secondsDisplay.innerHTML = `${secondsInput}`
-}
-  }
-
-// ?
-  var form = document.querySelector('.form-details')
-  form.addEventListener('submit', handleForm)
-  function handleForm(event) {
-    event.preventDefault();
-  }
 }
