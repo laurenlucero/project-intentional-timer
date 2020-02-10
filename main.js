@@ -18,25 +18,27 @@ function restrictNumber(e) {
   this.value = newValue;
 }
 
+// buttons
+
 var meditate = document.querySelector('.meditate-btn');
 var exercise = document.querySelector('.exercise-btn');
 var study = document.querySelector('.study-btn');
 var medActive = document.querySelector('#meditate-btn');
 var studyActive = document.querySelector('#study-btn');
 var exerciseActive = document.querySelector('#exercise-btn');
-var main1 = document.querySelector(".main1");
-var main2 = document.querySelector(".main2");
-var startButton = document.querySelector(".start-button");
+// var main1 = document.querySelector(".main1");
+// var main2 = document.querySelector(".main2");
+// var startButton = document.querySelector(".start-button");
 
 meditate.addEventListener('click', changeMediBtnColor)
 exercise.addEventListener('click', changeExerBtnColor)
 study.addEventListener('click', changeStudyBtnColor)
-startButton.addEventListener('click', changePage);
-
-function changePage() {
-  main1.style.display = "none";
-  main2.classList.remove("main2");
-}
+// startButton.addEventListener('click', changePage);
+//
+// function changePage() {
+//   main1.style.display = "none";
+//   main2.classList.remove("main2");
+// }
 
 function changeMediBtnColor() {
   meditate.classList.add('med-btn-selected');
@@ -99,15 +101,22 @@ function checkInputValues() {
     document.querySelector('.seconds-error').hidden = false;
     seconds = false;
   }
-  if (goal && minutes && seconds) {
-    newActivityPage = document.querySelector('.new-activity-page')
-    currentActivityPage = document.querySelector('.current-activity-page')
-    newActivityPage.classList.add('hide')
-    currentActivityPage.classList.remove('hide')
-var goal = Text(document.getElementById('goal').value)
-var minutes = Number(document.getElementById('minutes').value)
-var seconds = Number(document.getElementById('seconds').value)
-}
+if (goal && minutes && seconds)
+ {
+  main1 = document.querySelector(".main1");
+  main2 = document.querySelector(".main2");
+  main1.style.display = "none";
+  main2.classList.remove("main2");
+  }
+//   if (goal && minutes && seconds) {
+//     newActivityPage = document.querySelector('.new-activity-page')
+//     currentActivityPage = document.querySelector('.current-activity-page')
+//     newActivityPage.classList.add('hide')
+//     currentActivityPage.classList.remove('hide')
+// var goal = Text(document.getElementById('goal').value)
+// var minutes = Number(document.getElementById('minutes').value)
+// var seconds = Number(document.getElementById('seconds').value)
+// }
 
 // ?
 var goalDisplay = document.querySelector('.goal-display')
