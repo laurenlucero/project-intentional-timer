@@ -138,11 +138,11 @@ width: 40%
   color: #FD8078;
 }
 
-/* :required {
+.hidden-error {
   color: #EFB7EC;
-} */
+}
 
-.activity-name-header {
+.goal-display {
   display: flex;
   justify-content: center;
   margin: 10px;
