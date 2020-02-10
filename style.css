@@ -30,6 +30,10 @@ img {
   padding: 1%;
 }
 
+.main1 {
+  
+}
+
 /* This section contains elements for the left side of the page */
 
 .left-container {
@@ -178,4 +182,9 @@ width: 40%
   margin: 0;
   text-align: center;
   padding-top: 30px;
+}
+
+/* This section contains the elements for the timer page */
+.main2 {
+  display: none;
 }

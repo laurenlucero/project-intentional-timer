@@ -18,18 +18,25 @@ function restrictNumber(e) {
   this.value = newValue;
 }
 
-// activity category buttons
-
-meditate = document.querySelector('.meditate-btn')
-exercise = document.querySelector('.exercise-btn')
-study = document.querySelector('.study-btn')
-medActive = document.querySelector('#meditate-btn')
-studyActive = document.querySelector('#study-btn')
-exerciseActive = document.querySelector('#exercise-btn')
+var meditate = document.querySelector('.meditate-btn');
+var exercise = document.querySelector('.exercise-btn');
+var study = document.querySelector('.study-btn');
+var medActive = document.querySelector('#meditate-btn');
+var studyActive = document.querySelector('#study-btn');
+var exerciseActive = document.querySelector('#exercise-btn');
+var main1 = document.querySelector(".main1");
+var main2 = document.querySelector(".main2");
+var startButton = document.querySelector(".start-button");
 
 meditate.addEventListener('click', changeMediBtnColor)
 exercise.addEventListener('click', changeExerBtnColor)
 study.addEventListener('click', changeStudyBtnColor)
+startButton.addEventListener('click', changePage);
+
+function changePage() {
+  main1.style.display = "none";
+  main2.classList.remove("main2");
+}
 
 function changeMediBtnColor() {
   meditate.classList.add('med-btn-selected');
