@@ -27,6 +27,8 @@ var medActive = document.querySelector('#meditate-btn');
 var studyActive = document.querySelector('#study-btn');
 var exerciseActive = document.querySelector('#exercise-btn');
 
+
+
 meditate.addEventListener('click', changeMediBtnColor)
 exercise.addEventListener('click', changeExerBtnColor)
 study.addEventListener('click', changeStudyBtnColor)
@@ -96,14 +98,18 @@ if (goal && minutes && seconds)
  {
   newActivityPage = document.querySelector(".new-activity-page");
   currentActivityPage = document.querySelector(".current-activity-page");
+  // var leftContainer1 = document.querySelector('.left-container-1');
+  // var leftContainer2 = document.querySelector('.left-container-2');
   newActivityPage.style.display = "none";
   currentActivityPage.classList.remove("current-activity-page");
+  // leftContainer1.style.display = "none";
+  // leftContainer2.classList.remove("left-container-2");
   }
   if (goal && minutes && seconds) {
     newActivityPage = document.querySelector('.new-activity-page')
     currentActivityPage = document.querySelector('.current-activity-page')
-    newActivityPage.classList.add('hide')
-    currentActivityPage.classList.remove('hide')
+    // newActivityPage.classList.add('hide')
+    // currentActivityPage.classList.remove('hide')
 var goal = Text(document.getElementById('goal').value)
 var minutes = Number(document.getElementById('minutes').value)
 var seconds = Number(document.getElementById('seconds').value)
