@@ -106,11 +106,12 @@ input {
 
 .start-button {
   float: right;
-  position: absolute;
+  margin-top: 28px;
+  /* position: absolute; */
   padding: 13px;
   width: 180px;
-  bottom: 100px;
-  right: 650px;
+  /* bottom: 100px; */
+  /* right: 650px; */
   background-color: white;
   color: black;
   text-transform: uppercase;
