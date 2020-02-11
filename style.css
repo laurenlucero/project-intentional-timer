@@ -30,18 +30,18 @@ img {
   padding: 1%;
 }
 
-.main1 {
+/* .new-activity-page {
 
-}
+} */
 
 /* This section contains elements for the left side of the page */
 
-.left-container {
+.left-container-1 {
   padding: 2%;
   width: 60%;
   display: inline-block;
   border-right: 5px solid #46424D;
-  height: 100vh;
+  height: 91vh;
 }
 
 .new-activity-header, .current-activity-header {
@@ -191,3 +191,12 @@ width: 40%
   top: 80px;
   width: 50%; */
 }
+
+/* .left-container-2 {
+  padding: 2%;
+  width: 60%;
+  display: inline-block;
+  border-right: 5px solid #46424D;
+  height: 100vh;
+  display: none;
+} */
