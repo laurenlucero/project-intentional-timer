@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Intention Timer</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <header class="title-header">
-      <h1 class="">Intention Timer</h1>
-    </header>
-    <!-- <section class="main1"> -->
-    <section class="left-container">
+<head>
+  <meta charset="UTF-8">
+  <title>Intention Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="title-header">
+    <h1 class="">Intention Timer</h1>
+  </header>
+  <!-- <section class="main1"> -->
+  <main class="left-container-1">
     <section class="new-activity-page">
       <h1 class="new-activity-header">New Activity</h1>
       <section class="start-activity">
-          <h3 class="category-select-header">Select a category:</h3>
-            <section class="category-buttons">
-              <button class="study-btn"><img src="assets/study.svg" id="study-btn" alt="lit-bulb-over-open-book-logo">Study</button>
-              <button class="meditate-btn"><img src="assets/meditate.svg" id="meditate-btn" alt="lotus-flower-logo">Meditate</button>
-              <button class="exercise-btn"><img src="assets/exercise.svg" id="exercise-btn" alt="shoe-in-motion-logo">Exercise</button>
-              <p hidden class="category-error hidden-error"><img src="assets/warning.svg">Category is required</p>
-            </section>
-            <form class="form-details">
-            <section class="accomplish-input">
-              <label>What would you like to accomplish during this time?</label>
-              <input type=text class="goal-input" id="goal"></input>
-              <p hidden class="goal-error hidden-error"><img src="assets/warning.svg">A description is required</p>
-            </section>
-            <section class="minutes-container">
-              <label>Minutes</label>
-              <input type=number class="minutes" id="minutes"></input>
-              <p hidden class="minutes-error hidden-error"><img src="assets/warning.svg">Minutes are required</p>
-            </section>
-            <section class="seconds-container">
-              <label>Seconds</label>
-              <input type=number class="seconds" id="seconds"></input>
-              <p hidden class="seconds-error hidden-error"><img src="assets/warning.svg">Seconds are required</p>
-            </section>
-            <input class="start-button" type="submit" value="Start Activity">
-          </form>
+        <h3 class="category-select-header">Select a category:</h3>
+        <section class="category-buttons">
+          <button class="study-btn"><img src="assets/study.svg" id="study-btn" alt="lit-bulb-over-open-book-logo">Study</button>
+          <button class="meditate-btn"><img src="assets/meditate.svg" id="meditate-btn" alt="lotus-flower-logo">Meditate</button>
+          <button class="exercise-btn"><img src="assets/exercise.svg" id="exercise-btn" alt="shoe-in-motion-logo">Exercise</button>
+          <p hidden class="category-error hidden-error"><img src="assets/warning.svg">Category is required</p>
         </section>
-      </section>
-    </section>
-  <!-- </section> -->
-      <section class="right-container">
-        <section class="past-activities">
-          <h1>Past Activities</h1>
-          <section class="paragraph">
-            <!-- <p>You haven't logged any activities yet.</p>
-            <p>Complete the form to the left to get started!</p> -->
+        <form class="form-details">
+          <section class="accomplish-input">
+            <label>What would you like to accomplish during this time?</label>
+            <input type=text class="goal-input" id="goal"></input>
+            <p hidden class="goal-error hidden-error"><img src="assets/warning.svg">A description is required</p>
           </section>
-        </section>
+          <section class="minutes-container">
+            <label>Minutes</label>
+            <input type=number class="minutes" id="minutes"></input>
+            <p hidden class="minutes-error hidden-error"><img src="assets/warning.svg">Minutes are required</p>
+          </section>
+          <section class="seconds-container">
+            <label>Seconds</label>
+            <input type=number class="seconds" id="seconds"></input>
+            <p hidden class="seconds-error hidden-error"><img src="assets/warning.svg">Seconds are required</p>
+          </section>
+          <input class="start-button" type="submit" value="Start Activity">
+        </form>
       </section>
-  <!-- current activity page -->
-<!-- <section class="main2"> -->
-  <section class="left-container">
+    </section>
     <section class="current-activity-page">
-    <h1 class="current-activity-header">Current Activity</h1>
-    <section class="current-activity">
-      <h1 class="goal-display">Deep Breathing</h1>
-      <section class="timer">
-        <p class=time-in-mins></p>:<p class='time-in-secs'></p>
+      <h1 class="current-activity-header">Current Activity</h1>
+      <section class="current-activity">
+        <h1 class="goal-display">Deep Breathing</h1>
+        <section class="timer">
+          <p class=time-in-mins></p>:<p class='time-in-secs'></p>
+        </section>
+        <button class="start-timer-btn">START</button>
       </section>
-      <button class="start-timer-btn">START</button>
     </section>
+  </main>
+  <!-- </section> -->
+  <aside class="right-container">
+    <section class="past-activities">
+      <h1>Past Activities</h1>
+      <article class="paragraph">
+        <!-- <p>You haven't logged any activities yet.</p>
+            <p>Complete the form to the left to get started!</p> -->
+      </article>
     </section>
-  </section>
-<!-- </section> -->
-    <script src="main.js"></script>
-  </body>
+  </aside>
+  <script src="main.js"></script>
+</body>
 </html>

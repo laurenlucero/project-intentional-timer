@@ -1,19 +1,18 @@
 /* The first code snippet was suggested by Amy in my balancing-act feedback
 It overrides the user agent style sheet styling so you are starting from scratch
 I also added the font and sized the images down */
-
 *,
 *:after,
 *:before {
   box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-   color: white;
-   background-color: #2B2733;
+  color: white;
+  background-color: #2B2733;
 }
 
 img {
@@ -30,18 +29,13 @@ img {
   padding: 1%;
 }
 
-.main1 {
-
-}
-
 /* This section contains elements for the left side of the page */
-
-.left-container {
+.left-container-1 {
   padding: 2%;
   width: 60%;
   display: inline-block;
   border-right: 5px solid #46424D;
-  height: 100vh;
+  height: 91vh;
 }
 
 .new-activity-header, .current-activity-header {
@@ -94,8 +88,8 @@ input {
 }
 
 .accomplish-input {
-display: block;
-margin-bottom: 70px;
+  display: block;
+  margin-bottom: 70px;
 }
 
 .minutes-container {
@@ -105,18 +99,19 @@ margin-bottom: 70px;
 }
 
 .seconds-container {
-display: inline-block;
-margin-left: 20px;
-width: 40%
+  display: inline-block;
+  margin-left: 20px;
+  width: 40%
 }
 
 .start-button {
   float: right;
-  position: absolute;
+  margin-top: 28px;
+  /* position: absolute; */
   padding: 13px;
   width: 180px;
-  bottom: 100px;
-  right: 650px;
+  /* bottom: 100px; */
+  /* right: 650px; */
   background-color: white;
   color: black;
   text-transform: uppercase;
@@ -168,7 +163,6 @@ width: 40%
 }
 
 /* This section contains the elements for the right side of the page */
-
 .right-container {
   display: inline-block;
   vertical-align: top;
@@ -187,7 +181,4 @@ width: 40%
 /* This section contains the elements for the timer page */
 .current-activity-page {
   display: none;
-  /* position: absolute;
-  top: 80px;
-  width: 50%; */
 }
