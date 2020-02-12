@@ -157,7 +157,40 @@ input {
   border-radius: 50%;
   height: 250px;
   width: 250px;
-  border: 3px solid #C278FD;
+  border: 3px solid white;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+.start-timer-btn-study {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: 3px solid #B3FD78;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+  .start-timer-btn-meditate {
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border: 3px solid #C278FD;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+.start-timer-btn-exercise {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  border: 3px solid #FD8078;
   margin: 0 auto;
   font-size: 25px;
 }
