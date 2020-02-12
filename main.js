@@ -26,6 +26,7 @@ var study = document.querySelector('.study-btn');
 var medActive = document.querySelector('#meditate-btn');
 var studyActive = document.querySelector('#study-btn');
 var exerciseActive = document.querySelector('#exercise-btn');
+var startTimerBtn = document.querySelector('.start-timer-btn')
 
 meditate.addEventListener('click', changeMediBtnColor)
 exercise.addEventListener('click', changeExerBtnColor)
@@ -38,6 +39,8 @@ function changeMediBtnColor() {
   exerciseActive.src = "assets/exercise.svg";
   study.classList.remove('study-btn-selected');
   studyActive.src = "assets/study.svg";
+  startTimerBtn.classList.add('start-timer-btn-meditate');
+  startTimerBtn.classList.remove('start-timer-btn');
 }
 
 function changeExerBtnColor() {
@@ -47,6 +50,8 @@ function changeExerBtnColor() {
   exerciseActive.src = "assets/exercise-active.svg";
   study.classList.remove('study-btn-selected');
   studyActive.src = "assets/study.svg";
+  startTimerBtn.classList.add('start-timer-btn-exercise');
+  startTimerBtn.classList.remove('start-timer-btn');
 }
 
 function changeStudyBtnColor() {
@@ -56,6 +61,8 @@ function changeStudyBtnColor() {
   exerciseActive.src = "assets/exercise.svg";
   study.classList.add('study-btn-selected');
   studyActive.src = "assets/study-active.svg";
+  startTimerBtn.classList.add('start-timer-btn-study');
+  startTimerBtn.classList.remove('start-timer-btn');
 }
 
 // error messages if no input
