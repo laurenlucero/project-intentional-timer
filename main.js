@@ -1,9 +1,26 @@
 console.log("JavaScript test")
 
-// time input numbers only
+// variables
 
-minutesInput = document.querySelector('.minutes')
-secondsInput = document.querySelector('.seconds')
+var minutesInput = document.querySelector('.minutes')
+var secondsInput = document.querySelector('.seconds')
+var meditate = document.querySelector('.meditate-btn');
+var exercise = document.querySelector('.exercise-btn');
+var study = document.querySelector('.study-btn');
+var medActive = document.querySelector('#meditate-btn');
+var studyActive = document.querySelector('#study-btn');
+var exerciseActive = document.querySelector('#exercise-btn');
+var startTimerBtn = document.querySelector('.start-timer-btn')
+var userGoalInput = document.querySelector('.goal-input')
+var hiddenError = document.querySelector('.hidden-error')
+var startButton = document.querySelector('.start-button')
+var goalDisplay = document.querySelector('.goal-display')
+var minutesDisplay = document.querySelector('.time-in-mins')
+var secondsDisplay = document.querySelector('.time-in-secs')
+var form = document.querySelector('.form-details')
+var startTimerBtn = document.querySelector('.start-timer-btn')
+
+// time input numbers only
 
 minutesInput.addEventListener('input', restrictNumber)
 secondsInput.addEventListener('input', restrictNumber)
@@ -19,14 +36,6 @@ function restrictNumber(e) {
 }
 
 // buttons
-
-var meditate = document.querySelector('.meditate-btn');
-var exercise = document.querySelector('.exercise-btn');
-var study = document.querySelector('.study-btn');
-var medActive = document.querySelector('#meditate-btn');
-var studyActive = document.querySelector('#study-btn');
-var exerciseActive = document.querySelector('#exercise-btn');
-var startTimerBtn = document.querySelector('.start-timer-btn')
 
 meditate.addEventListener('click', changeMediBtnColor)
 exercise.addEventListener('click', changeExerBtnColor)
@@ -67,12 +76,6 @@ function changeStudyBtnColor() {
 
 // error messages if no input
 
-userGoalInput = document.querySelector('.goal-input')
-minutesInput = document.querySelector('.minutes')
-secondsInput = document.querySelector('.seconds')
-hiddenError = document.querySelector('.hidden-error')
-startButton = document.querySelector('.start-button')
-
 startButton.addEventListener('click', checkInputValues)
 
 function checkInputValues() {
@@ -96,12 +99,68 @@ function checkInputValues() {
     currentActivityPage = document.querySelector(".current-activity-page");
     newActivityPage.style.display = "none";
     currentActivityPage.classList.remove("current-activity-page");
+    minutes = Number(minutesInput.value)
+    seconds = Number(secondsInput.value)
   }
+  displayTimer()
+}
+
+// set timer
+
+var minutes = 0
+var seconds = 0
+
+function displayTimer() {
+  goalDisplay.innerText = userGoalInput.value;
+  minutesDisplay.innerText = minutesInput.value;
+    if (minutes < 10) {
+      minutesDisplay.innerText = '0' + minutes;
+    }
+  secondsDisplay.innerText = secondsInput.value;
+    if (seconds < 10) {
+      secondsDisplay.innerText = '0' + seconds;
+    }
+}
+
+// start Timer
+
+startTimerBtn.addEventListener('click', startTimer)
+
+function startTimer() {
+  function timer() {
+    setTimeout(function() {
+      if (seconds > 0) {
+        seconds--;
+        secondsDisplay.innerText = seconds;
+        minutesDisplay.innerText = minutes;
+        if (seconds < 10) {
+          secondsDisplay.innerText = '0' + seconds;
+        }
+        if (minutes < 10) {
+          minutesDisplay.innerText = '0' + minutes;
+        }
+        return timer();
+      } else if (seconds === 0 && minutes > 0) {
+        minutes--;
+        seconds = 59;
+        secondsDisplay.innerText = seconds;
+        minutesDisplay.innerText = minutes;
+        if (minutes < 10) {
+          minutesDisplay.innerText = '0' + minutes;
+        }
+        return timer();
+      } else if (seconds === 0 && minutes === 0) {
+        clearInterval(timer);
+        console.log('done');
+        window.alert('Time is up!')
+      }
+    }, 1000)
+  }
+  timer();
 }
 
 // prevents form from refreshing by default
 
-var form = document.querySelector('.form-details')
 form.addEventListener('submit', handleForm)
 
 function handleForm(event) {
