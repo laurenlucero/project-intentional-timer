@@ -1,6 +1,5 @@
-/* The first code snippet was suggested by Amy in my balancing-act feedback
-It overrides the user agent style sheet styling so you are starting from scratch
-I also added the font and sized the images down */
+/* The first code snippet overrides the user agent style sheet styling so you are starting from scratch */
+
 *,
 *:after,
 *:before {
@@ -30,6 +29,7 @@ img {
 }
 
 /* This section contains elements for the left side of the page */
+
 .left-container-1 {
   padding: 2%;
   width: 60%;
@@ -107,11 +107,8 @@ input {
 .start-button {
   float: right;
   margin-top: 28px;
-  /* position: absolute; */
   padding: 13px;
   width: 180px;
-  /* bottom: 100px; */
-  /* right: 650px; */
   background-color: white;
   color: black;
   text-transform: uppercase;
@@ -163,6 +160,7 @@ input {
 }
 
 /* This section contains the elements for the right side of the page */
+
 .right-container {
   display: inline-block;
   vertical-align: top;
@@ -179,6 +177,7 @@ input {
 }
 
 /* This section contains the elements for the timer page */
+
 .current-activity-page {
   display: none;
 }
