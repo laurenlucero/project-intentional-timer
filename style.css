@@ -132,6 +132,19 @@ input {
 
 .hidden-error {
   color: #EFB7EC;
+  font-size: 12px;
+  position: absolute;
+
+  /* display: inline-block; */
+  /* align-items: center; */
+}
+
+.error-image {
+  position: absolute;
+  width: 20px;
+  display: flex;
+  align-items: center;
+
 }
 
 .goal-display {
