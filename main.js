@@ -97,6 +97,19 @@ function checkInputValues() {
     newActivityPage.style.display = "none";
     currentActivityPage.classList.remove("current-activity-page");
   }
+  setTimer()
+}
+
+// set timer
+
+var goalDisplay = document.querySelector('.goal-display')
+var minutesDisplay = document.querySelector('.time-in-mins')
+var secondsDisplay = document.querySelector('.time-in-secs')
+
+function setTimer() {
+  goalDisplay.innerText = userGoalInput.value;
+  minutesDisplay.innerText = minutesInput.value;
+  secondsDisplay.innerText = secondsInput.value;
 }
 
 // prevents form from refreshing by default
