@@ -9,46 +9,46 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: white;
   background-color: #2B2733;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
-  width: 30px;
   display: block;
   height: 41px;
+  width: 30px;
 }
 
 .title-header {
   background-color: #46424D;
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
   padding: 1%;
+  text-transform: uppercase;
 }
 
 /* This section contains elements for the left side of the page */
 
 .left-container-1 {
+  border-right: 5px solid #46424D;
+  display: inline-block;
+  height: 91vh;
   padding: 2%;
   width: 60%;
-  display: inline-block;
-  border-right: 5px solid #46424D;
-  height: 91vh;
 }
 
 .new-activity-header, .current-activity-header {
-  margin: 10px 0;
   display: inline-block;
+  margin: 10px 0;
 }
 
 .start-activity, .current-activity {
   background-color: #46424D;
-  width: 100%;
+  border-radius: 5px;
   height: 500px;
   padding: 30px 60px;
-  border-radius: 5px;
+  width: 100%;
 }
 
 .category-select-header {
@@ -62,29 +62,29 @@ img {
 }
 
 button {
-  background: none;
-  width: 150px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  background: none;
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 5px 0;
+  width: 150px;
 }
 
 .form-details {
-  width: 100%;
   height: 65%;
+  width: 100%;
 }
 
 input {
+  background: transparent;
   border: none;
   border-bottom: 1px solid white;
-  background: transparent;
   color: white;
   font-size: 16px;
-  width: 100%;
   height: 50px;
+  width: 100%;
 }
 
 .accomplish-input {
@@ -105,14 +105,14 @@ input {
 }
 
 .start-button {
+  background-color: white;
+  border-radius: 5px;
+  color: black;
   float: right;
   margin-top: 28px;
   padding: 13px;
-  width: 180px;
-  background-color: white;
-  color: black;
   text-transform: uppercase;
-  border-radius: 5px;
+  width: 180px;
 }
 
 .med-btn-selected {
@@ -134,16 +134,13 @@ input {
   color: #EFB7EC;
   font-size: 12px;
   position: absolute;
-
-  /* display: inline-block; */
-  /* align-items: center; */
 }
 
 .error-image {
+  align-items: center;
+  display: flex;
   position: absolute;
   width: 20px;
-  display: flex;
-  align-items: center;
 
 }
 
@@ -155,71 +152,71 @@ input {
 
 .timer {
   display: flex;
-  justify-content: center;
   font-size: 60px;
   font-weight: bold;
+  justify-content: center;
   margin-bottom: 40px;
 }
 
 .start-timer-btn {
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
   border: 3px solid white;
-  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
   font-size: 25px;
+  height: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 250px;
 }
 
 .start-timer-btn-study {
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
   border: 3px solid #B3FD78;
-  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
   font-size: 25px;
+  height: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 250px;
 }
 
   .start-timer-btn-meditate {
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    height: 250px;
-    width: 250px;
     border: 3px solid #C278FD;
-    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
     font-size: 25px;
+    height: 250px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 250px;
 }
 
 .start-timer-btn-exercise {
-  display: flex;
-  justify-content: center;
-  border-radius: 50%;
-  height: 250px;
-  width: 250px;
   border: 3px solid #FD8078;
-  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
   font-size: 25px;
+  height: 250px;
+  justify-content: center;
+  margin: 0 auto;
+  width: 250px;
 }
 
 /* This section contains the elements for the right side of the page */
 
 .right-container {
   display: inline-block;
-  vertical-align: top;
   height: 500px;
   margin: 10px;
   padding: 10px 5px;
+  vertical-align: top;
 }
 
 .paragraph {
   display: block;
   margin: 0;
-  text-align: center;
   padding-top: 30px;
+  text-align: center;
 }
 
 /* This section contains the elements for the timer page */
