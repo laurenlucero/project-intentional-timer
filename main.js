@@ -19,16 +19,22 @@ var minutesDisplay = document.querySelector('.time-in-mins')
 var secondsDisplay = document.querySelector('.time-in-secs')
 var form = document.querySelector('.form-details')
 var startTimerBtn = document.querySelector('.start-timer-btn')
+var minutes = 0
+var seconds = 0
+var timerAlert = document.querySelector('.alert')
 
-// time input numbers only
+// event listeners
 
 minutesInput.addEventListener('input', restrictNumber)
 secondsInput.addEventListener('input', restrictNumber)
+meditate.addEventListener('click', changeMediBtnColor)
+exercise.addEventListener('click', changeExerBtnColor)
+study.addEventListener('click', changeStudyBtnColor)
+startButton.addEventListener('click', checkInputValues)
+startTimerBtn.addEventListener('click', startTimer)
+form.addEventListener('submit', handleForm)
 
-function restrictNumber(e) {
-  var newValue = this.value.replace();
-  this.value = newValue;
-}
+// time input numbers only
 
 function restrictNumber(e) {
   var newValue = this.value.replace();
@@ -36,10 +42,6 @@ function restrictNumber(e) {
 }
 
 // buttons
-
-meditate.addEventListener('click', changeMediBtnColor)
-exercise.addEventListener('click', changeExerBtnColor)
-study.addEventListener('click', changeStudyBtnColor)
 
 function changeMediBtnColor() {
   meditate.classList.add('med-btn-selected');
@@ -76,8 +78,6 @@ function changeStudyBtnColor() {
 
 // error messages if no input
 
-startButton.addEventListener('click', checkInputValues)
-
 function checkInputValues() {
   var goal = true;
   if (userGoalInput.value === '') {
@@ -107,9 +107,6 @@ function checkInputValues() {
 
 // set timer
 
-var minutes = 0
-var seconds = 0
-
 function displayTimer() {
   goalDisplay.innerText = userGoalInput.value;
   minutesDisplay.innerText = minutesInput.value;
@@ -125,8 +122,6 @@ function displayTimer() {
 }
 
 // start Timer
-
-startTimerBtn.addEventListener('click', startTimer)
 
 function startTimer() {
   function timer() {
@@ -153,8 +148,8 @@ function startTimer() {
         return timer();
       } else if (seconds === 0 && minutes === 0) {
         clearInterval(timer);
-        console.log('done');
-        window.alert('Time is up!');
+        // window.alert('Time is up!');
+        timerDone();
       }
     }, 1000)
   }
@@ -163,8 +158,11 @@ function startTimer() {
 
 // prevents form from refreshing by default
 
-form.addEventListener('submit', handleForm)
-
 function handleForm(event) {
   event.preventDefault();
+}
+
+// timer done alert
+function timerDone() {
+  timerAlert.hidden = false
 }
